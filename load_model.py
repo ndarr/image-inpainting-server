@@ -15,7 +15,6 @@ import torch.nn.functional as F
 from partialconv2d import PartialConv2d
 from torch.nn import Sequential, ReLU, BatchNorm2d, ReflectionPad2d, Conv2d, ConvTranspose2d, MaxPool2d, MaxUnpool2d
 import torch
-from torchsummary import summary
 
 class LeakyTanh(torch.nn.Module):
   def __init__(self, leak_factor: float = 0.01, **kwargs):
