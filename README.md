@@ -1,4 +1,4 @@
-#Image Inpainting Server
+# Image Inpainting Server
 
 The server code for our generative inpainting model. The client code can be found on our [inpainting-client repository](https://github.com/ndarr/image-inpainting-client). It can also be tested online on [https://ndarr.github.io/image-inpainting-client/](https://ndarr.github.io/image-inpainting-client/). 
 
