@@ -54,14 +54,17 @@ def hello_world():
         print(input_.shape)
         print(input_)
         #print(input_)
-        np_pred = (model(input_)*255.9).detach().numpy()
+        np_pred = (model(input_)*255).detach().numpy()
+        print(np_pred)
         print(np_pred.shape)
-        #np_pred = np.transpose(np_pred, (0,2,3,1))
+        np_pred = np.transpose(np_pred, (0,2,3,1)) 
         print(np_pred.shape)
         np_pred = np_pred.reshape((256,256,3))
         print(np_pred.shape)
 
         np_pred = np.floor(np_pred)
+        print(np_pred)
+        plt.imsave("prediction_.jpg", np_pred.astype('uint8'))
         #np_pred = np.absolute(np_pred-255)
         pred = np_pred.astype('uint8').tolist()
 
@@ -75,7 +78,7 @@ def hello_world():
 
 
 def get_data_from_image(image):
-    print(image)
+    # print(image)
     image_height = 256
     image_width = image_height
     image_data = []
@@ -89,8 +92,6 @@ def get_data_from_image(image):
             image_data.append(green)
             image_data.append(blue)
             image_data.append(alpha)
-
-    #print(image_data)
     return image_data
 
 
