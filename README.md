@@ -13,5 +13,5 @@ We build the model based on the U-Net architecture by [Ronneberger et al.](https
 
 ## Acknowledgments
 
-Thanks to NVIDIA for providing the partialconv2d module for PyTorch: [https://github.com/NVIDIA/partialconv](https://github.com/NVIDIA/partialconv)
-Thanks to Alexandre Milesi for providing the PyTorch UNet implementation: [https://github.com/milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet)
+* Thanks to NVIDIA for providing the partialconv2d module for PyTorch: [https://github.com/NVIDIA/partialconv](https://github.com/NVIDIA/partialconv)
+* Thanks to Alexandre Milesi for providing the PyTorch UNet implementation: [https://github.com/milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet)
