@@ -3,6 +3,8 @@ docker-build-master:
   # Official docker image.
   image: docker:latest
   stage: build
+  variables:
+    DOCKER_HOST: tcp://127.0.0.1:2376
   services:
     - docker:18.09.7-dind
   before_script:
