@@ -1,0 +1,6 @@
+Flask==1.0.2
+torch
+torchvision
+pillow
+matplotlib
+flask-cors
